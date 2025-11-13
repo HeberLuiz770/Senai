@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html pt-br>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+<p class="texto">olá</p> 
+<p class="texto">Mundo</p> 
+    <script>
+        // Arquivo: exemplo_null_minimo.js
+
+let configuracaoDoTema = null;
+
+console.log("Status inicial:", configuracaoDoTema);
+
+if (configuracaoDoTema === null) {
+    console.log("Tema não definido. Carregando tema padrão...");
+    // Atribui um valor real
+    configuracaoDoTema = "Tema Escuro";
+}
+
+console.log("Status final:", configuracaoDoTema);
+
+// Reatribuindo para null
+configuracaoDoTema = null;
+console.log("Status após redefinição:", configuracaoDoTema);
+
+let cor = "azul";
+
+switch (cor) {
+  case "azul":
+    console.log("Cor azul");
+    break;
+  default:
+    console.log("Outra cor");
+}
+
+function soma(a, b) {
+  return a + b;
+}
+console.log(soma(2, 3)); // Parâmetros: a, b | Argumentos: 2, 3
+
+
+
+let frutas = ["maçã", "banana", "uva"];
+
+let removida = frutas. pop ();
+
+console . log (frutas);  
+console . log(removida); 
+
+const numeros = [1, 2, 3];
+const dobrados = numeros.map(n => n * 2);
+console.log(dobrados); // [2, 4, 6]
+
+
+
+const titulo = document.querySelector("h1");
+titulo.textContent = "Bem-vinda, Maria!";
+
+async function executar() {
+    console.log("Início...");
+    await atrasar(2000); // Pausa a função, mas libera o programa
+    console.log("Fim."); 
+}
+executar();
+console.log("Esta linha aparece primeiro!"); // 🚀
+    </script>
+</body>
+</html>
